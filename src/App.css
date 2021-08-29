@@ -1,6 +1,0 @@
-.first-letter-uppercase:first-letter {
-    text-transform:capitalize;
-}
-#copy-success-msg{
-    transition: all 0.5 ease-out;
-}
