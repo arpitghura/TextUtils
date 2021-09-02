@@ -24,10 +24,7 @@ export default function TextForm(props) {
         props.showAlert("Extra Spaces Removed", "success");
     }
     const handleCopy = () => {
-        let text = document.getElementById("mybox");
-        text.select();
-        navigator.clipboard.writeText(text.value);
-        document.getSelection().removeAllRanges();
+        navigator.clipboard.writeText(text);
         props.showAlert("Text Copied to Clipboard", "success");
     }
     // const handleCapitalClick = () => {
@@ -61,7 +58,7 @@ export default function TextForm(props) {
         </div>
         <div className="container my-3" style={{color: props.mode === 'dark'?'white':'black'}}>
             <h1>Text Summary</h1>
-            <p>{text.length} Characters and {text.split(" ").filter((element)=>{ return element.length !== 0}).length} Words</p>
+            <p>{text.length} Characters and {text.split(/\s+/).filter((element)=>{ return element.length !== 0}).length} Words</p>
             <p>Reading Time: {0.008 * text.split(" ").filter((element)=>{ return element.length !== 0}).length} Minutes</p>
             <h2>Preview</h2>
             <p>{text.length>0?text:"Try TextUtils to preview your text here"}</p>

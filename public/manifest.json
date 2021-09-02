@@ -1,5 +1,6 @@
 {
- "name": "App",
+ "short_name": "TextUtils App",
+ "name": "TextUtils - Word Counter | Character Counter | Remove Extra Spaces | lowercase to uppercase | uppercase to lowercase | Manipulate Your Texts Now",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
