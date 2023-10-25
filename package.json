@@ -1,6 +1,6 @@
 {
-  "homepage": "https://arpitghura.github.io/TextUtils-React",
-  "name": "text-utils",
+  "homepage": "https://arpitghura.github.io/TextUtils",
+  "name": "textutils",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
