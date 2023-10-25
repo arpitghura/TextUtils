@@ -1,5 +1,5 @@
 import './App.css';
-import About from './Components/About';
+// import About from './Components/About';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
 import React, { useState } from 'react'
@@ -46,10 +46,10 @@ function App() {
     {/* /users --> Component 1
       	/users/home --> Component 2 */}
     <Switch>
-          <Route exact path="/TextUtils/about"> 
+          {/* <Route exact path="/about"> 
             <About mode={mode}/>
-          </Route>
-          <Route exact path="/TextUtils">
+          </Route> */}
+          <Route exact path="/">
           <TextForm showAlert={showAlert} heading="Try Out TextUtils Now!!" mode={mode}/>
           </Route>
     </Switch>
